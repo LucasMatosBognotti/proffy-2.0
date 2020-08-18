@@ -3,7 +3,7 @@ import { Form } from '@unform/web';
 
 import Input from '../../components/Input';
 
-import { Container, Content, Background } from './styles';
+import { Container, Background, Content, Footer } from './styles';
 
 const SignIn: React.FC = () => {
   const handleSubmit = useCallback((data: object) => {
@@ -30,13 +30,13 @@ const SignIn: React.FC = () => {
           <button type="submit">Entrar</button>
         </Form>
 
-        <div>
+        <Footer>
           <p>
             Não tem conta ? <a href="aaa">Criar conta</a>
           </p>
 
           <span>É de graça</span>
-        </div>
+        </Footer>
       </Content>
     </Container>
   );
